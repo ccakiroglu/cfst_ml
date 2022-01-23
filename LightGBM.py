@@ -1,8 +1,6 @@
 from pandas import read_csv, DataFrame
 from numpy import absolute,arange,mean,std,argsort,sqrt
 from sklearn.model_selection import train_test_split
-from xgboost.sklearn import XGBRegressor 
-#from xgboost import XGBRegressor
 from lightgbm.sklearn import LGBMRegressor
 from matplotlib import pyplot 
 from sklearn.model_selection import cross_val_score, KFold, GridSearchCV
@@ -16,7 +14,7 @@ scaler = MinMaxScaler()
 pyplot.rc('text',usetex=True)
 pyplot.rc('font',size=15)
 colnames = ['B','H','t','L','fy','fc','Ntest']
-path='path to inputfile.csv'
+path='path to RectangularConcentricStub7columns.csv'
 df = read_csv(path,header=0,names=colnames)
 Nu0_2500dir='path to \\Nu_0_2500.csv'
 range1dir='path to \\fc_0_25.csv'

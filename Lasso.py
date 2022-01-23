@@ -13,7 +13,7 @@ scaler = MinMaxScaler()
 pyplot.rc('text',usetex=True)
 pyplot.rc('font',size=15)
 colnames = ['B','H','t','L','fy','fc','Ntest']
-path='path to inputfile.csv'
+path='path to RectangularConcentricStub7columns.csv'
 df = read_csv(path,header=0,names=colnames)
 data=df.values
 print('data.shape:',data.shape)
